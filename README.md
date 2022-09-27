@@ -12,27 +12,19 @@
 > * Docker
 > * Node.js
 ### Порядок запуска и развёртывания проекта:
-* Клонировать проект из репозитория, выполнив команду в консоли или терминале: 
-
-`git clone https://github.com/iRootos/Netology-QA-Diploma.git`
-* Запустить контейнер Docker с MySQL через Docker-Compose введя команду:
-
-`docker-compose up`
-* Запустить SUT командой:
-
-`java -jar artifacts\aqa-shop.jar`
-* Запустить симулятор банковского сервиса командой:
-
-`cd gate-simulator; npm start`
-* Запустить выполнение авто-тестов командой:
-
-`.\gradlew test clean"`
-* Для генерации отчёта Allure выполнить команду:
-
-`.\gradlew allureServe`
-* После выполнения авто-тестов и генерации отчётов остановить работу SUT и симулятора комбинацией клавиш:
-
-`CTRL + C`
-* Остановить работу контейнера Docker командой:
-
-`docker-compose down`
+1. Клонировать проект из репозитория, выполнив команду в консоли или терминале: 
+- `git clone https://github.com/iRootos/Netology-QA-Diploma.git`
+2. Запустить контейнер Docker с MySQL через Docker-Compose введя команду:
+- `docker-compose up`
+3. Запустить SUT командой:
+- `java -jar artifacts\aqa-shop.jar`
+4. Запустить симулятор банковского сервиса командой:
+- `cd gate-simulator; npm start`
+5. Запустить выполнение авто-тестов командой:
+- `.\gradlew test clean"`
+6. Для генерации отчёта Allure выполнить команду:
+- `.\gradlew allureServe`
+7. После выполнения авто-тестов и генерации отчётов остановить работу SUT и симулятора комбинацией клавиш:
+- `CTRL + C`
+8. Остановить работу контейнера Docker командой:
+- `docker-compose down`

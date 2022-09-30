@@ -185,7 +185,7 @@ public class NegativeTests {
         mainPage.buyTicket();
         BuyPage buyPage = new BuyPage();
         buyPage.buyThroughCard(DataHelper.doubleZeroMonthFormData());
-        buyPage.cardCodeFieldSubMessage(subMessageWrongData);
+        buyPage.cardCodeFieldSubMessage(subMessageWrongDate);
     }
 
     @Test
@@ -194,7 +194,7 @@ public class NegativeTests {
         mainPage.buyTicket();
         BuyPage buyPage = new BuyPage();
         buyPage.buyThroughCard(DataHelper.doubleZeroYearFormData());
-        buyPage.cardCodeFieldSubMessage(subMessageWrongData);
+        buyPage.cardCodeFieldSubMessage(subMessageWrongDate);
     }
 
     @Test
@@ -354,16 +354,16 @@ public class NegativeTests {
         mainPage.buyTicket();
         CreditPage creditPage = new CreditPage();
         creditPage.buyThroughCredit(DataHelper.doubleZeroMonthFormData());
-        creditPage.cardCodeFieldSubMessage(subMessageWrongData);
+        creditPage.cardCodeFieldSubMessage(subMessageWrongDate);
     }
 
     @Test
-    @DisplayName("Credit form | Should be message about wrong data in card month field. Double zero")
+    @DisplayName("Credit form | Should be message about wrong data in card year field. Double zero")
     void shouldBeErrorMessage_17_CreditForm() {
         mainPage.buyTicketTroughCredit();
         CreditPage creditPage = new CreditPage();
         creditPage.buyThroughCredit(DataHelper.doubleZeroYearFormData());
-        creditPage.cardCodeFieldSubMessage(subMessageWrongData);
+        creditPage.cardCodeFieldSubMessage(subMessageWrongDate);
     }
 
     @AfterAll

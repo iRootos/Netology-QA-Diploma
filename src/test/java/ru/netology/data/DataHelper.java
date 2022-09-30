@@ -77,7 +77,7 @@ public class DataHelper {
 
     public static String getCyrillicCardHolder(){
         final Faker faker = new Faker(new Locale("ru"));
-        return faker.name().fullName().toUpperCase();
+        return faker.name().firstName().toUpperCase() + ' ' + faker.name().lastName().toUpperCase() ;
     }
 
     public static String getNumbersCardHolder(){
